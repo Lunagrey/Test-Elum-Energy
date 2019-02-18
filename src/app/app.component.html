@@ -1,0 +1,72 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="body">
+	<div id="first-step">
+		<div class="block">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<form>
+						<h2>FORM</h2>
+						<div class="form-group">
+							<label class='form-label' for="name">
+								Firstname : 
+							</label>
+							<input id="name" type="text" class="form-control" required 
+        							[(ngModel)]="user.firstName">
+
+							<br/><br/>
+
+							<label class='form-label' for="name">
+								Lastname : 
+							</label>
+							<input type="text" id="Lastname" class="form-control">
+							<br/><br/>
+
+							<label class='form-label' for="name">
+								Adress : 
+							</label>
+							<input type="text" id="name" class="form-control">
+							<br/><br/>
+
+							<label class='form-label' for="name">
+								City : 
+							</label>
+							<input type="text" id="name" class="form-control">
+							<br/><br/>
+
+							<label class='form-label' for="name">
+								Email : 
+							</label>
+							<input type="text" id="name" class="form-control">
+							<br/><br/>
+
+							<label class='form-label' for="name">
+								Phone Number : 
+							</label>
+							<input type="text" id="name" class="form-control">
+						</div>
+						<br/>
+						</form>
+					</div>
+				</div>
+		</div>
+		<div class="block">
+			<div class='row'>
+				<h2>RESULT</h2>
+				<p>  Your name is {{ user.firstName }} {{ user.lastName }}.</p>
+				<p>  Your live at {{ user.adress }} in {{ user.city }}.</p>
+				<p>  Your email adress is {{ user.email }} in {{ user.lastName }}.</p>
+				<p>  Your phone number is {{ user.phoneNumber }}.</p>
+			</div>
+		</div>
+	</div>
+	<div id="second-step">
+		<div class="block">
+
+		</div>
+		<div class="block">
+
+		</div>
+	</div>
+</div>
+
+<router-outlet></router-outlet>
